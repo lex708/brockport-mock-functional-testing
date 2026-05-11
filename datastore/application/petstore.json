@@ -1,17 +1,5 @@
 [
   {
-    "cost": 100.00,
-    "petId": 2,
-    "legs": 4,
-    "animalType": "DOMESTIC",
-    "petType": "CAT",
-    "skinType": "UNKNOWN",
-    "gender": "FEMALE",
-    "breed": "SPHYNX",
-    "hasLegs": true,
-    "isMammal": false
-  },
-  {
     "cost": 750.00,
     "petId": 3,
     "legs": 4,
@@ -36,6 +24,18 @@
     "isMammal": false
   },
   {
+    "cost": 65.00,
+    "petId": 1,
+    "legs": 4,
+    "animalType": "DOMESTIC",
+    "petType": "CAT",
+    "skinType": "HAIR",
+    "gender": "MALE",
+    "breed": "BURMESE",
+    "hasLegs": true,
+    "isMammal": false
+  },
+  {
     "cost": 50.00,
     "petId": 2,
     "legs": 4,
@@ -44,6 +44,18 @@
     "skinType": "HAIR",
     "gender": "MALE",
     "breed": "GERMAN_SHEPHERD",
+    "hasLegs": true,
+    "isMammal": false
+  },
+  {
+    "cost": 100.00,
+    "petId": 2,
+    "legs": 4,
+    "animalType": "DOMESTIC",
+    "petType": "CAT",
+    "skinType": "UNKNOWN",
+    "gender": "FEMALE",
+    "breed": "SPHYNX",
     "hasLegs": true,
     "isMammal": false
   },
@@ -60,14 +72,35 @@
     "isMammal": false
   },
   {
-    "cost": 225.00,
-    "petId": 1,
-    "legs": 4,
+    "petId": 5,
+    "legs": 0,
     "animalType": "DOMESTIC",
-    "petType": "CAT",
-    "skinType": "FUR",
-    "gender": "FEMALE",
-    "breed": "SPHYNX",
+    "petType": "DOG",
+    "skinType": "UNKNOWN",
+    "gender": "MALE",
+    "breed": "POODLE",
+    "hasLegs": true,
+    "isMammal": false
+  },
+  {
+    "petId": 6,
+    "legs": 0,
+    "animalType": "DOMESTIC",
+    "petType": "DOG",
+    "skinType": "UNKNOWN",
+    "gender": "MALE",
+    "breed": "POODLE",
+    "hasLegs": true,
+    "isMammal": false
+  },
+  {
+    "petId": 7,
+    "legs": 0,
+    "animalType": "DOMESTIC",
+    "petType": "DOG",
+    "skinType": "UNKNOWN",
+    "gender": "MALE",
+    "breed": "POODLE",
     "hasLegs": true,
     "isMammal": false
   }

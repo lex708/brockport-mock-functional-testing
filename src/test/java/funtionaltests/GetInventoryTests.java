@@ -9,14 +9,15 @@ public class GetInventoryTests {
 
     @BeforeEach
     public void setup() {
-        RestAssured.baseURI = "http://localhost:8080/";
+        RestAssured.baseURI = "http://localhost";
+        RestAssured.port = 8080;
     }
 
     @Test
     public void getInventoryReturnsStatus200() {
         given()
                 .when()
-                .get("inventory")
+                .get("/inventory")
                 .then()
                 .log().all()
                 .statusCode(200);

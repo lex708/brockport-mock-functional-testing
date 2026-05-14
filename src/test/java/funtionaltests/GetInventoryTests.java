@@ -4,6 +4,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.greaterThan;
+
 
 public class GetInventoryTests {
 
@@ -15,12 +17,16 @@ public class GetInventoryTests {
 
     @Test
     public void getInventoryReturnsStatus200() {
+
+        // Arrange & Act
         given()
                 .when()
                 .get("/inventory")
+
+                // Assert
                 .then()
                 .log().all()
-                .statusCode(200);
+                .statusCode(200)
+                .body("size()", greaterThan(0));
     }
 }
-

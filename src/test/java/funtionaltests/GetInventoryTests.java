@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.greaterThan;
+import static org.hamcrest.Matchers.containsString;
 
 
 public class GetInventoryTests {
@@ -27,6 +27,6 @@ public class GetInventoryTests {
                 .then()
                 .log().all()
                 .statusCode(200)
-                .body("size()", greaterThan(0));
+                .body(containsString("cost"));
     }
 }

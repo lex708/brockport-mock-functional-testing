@@ -81,27 +81,5 @@
     "breed": "POODLE",
     "hasLegs": true,
     "isMammal": false
-  },
-  {
-    "petId": 6,
-    "legs": 0,
-    "animalType": "DOMESTIC",
-    "petType": "DOG",
-    "skinType": "UNKNOWN",
-    "gender": "MALE",
-    "breed": "POODLE",
-    "hasLegs": true,
-    "isMammal": false
-  },
-  {
-    "petId": 7,
-    "legs": 0,
-    "animalType": "DOMESTIC",
-    "petType": "DOG",
-    "skinType": "UNKNOWN",
-    "gender": "MALE",
-    "breed": "POODLE",
-    "hasLegs": true,
-    "isMammal": false
   }
 ]

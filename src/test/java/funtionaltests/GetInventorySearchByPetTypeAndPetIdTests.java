@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.containsString;
 
 public class GetInventorySearchByPetTypeAndPetIdTests {
@@ -15,16 +16,22 @@ public class GetInventorySearchByPetTypeAndPetIdTests {
         RestAssured.port = 8080;
     }
 
+
     @Test
     public void getDogByPetTypeAndPetIdReturnsStatus200() {
+
+        // Arrange & Act
         given()
                 .queryParam("petType", "DOG")
                 .queryParam("petId", 1)
                 .when()
-                .get("inventory/search")
+                .get("/inventory/search")
+
+                // Assert
                 .then()
                 .log().all()
                 .statusCode(200)
-                .body(containsString("DOG"));
+                .body(containsString("DOG"))
+                .body(containsString("POODLE"));
     }
 }
